@@ -12,7 +12,7 @@ body {
 
 /* general */
 
-.container1 {
+.container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -129,7 +129,7 @@ h3, h2 {
   width: 100%;
   max-width: 960px;
   padding: 30px;
-  margin: 30px 0 40px;
+  margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -170,7 +170,7 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 170px;
+  width: 200px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -180,7 +180,6 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
-  padding: 10px;
 }
 
 #contact-form li {
@@ -217,3 +216,28 @@ input[type=submit] {
   border: 0 none;
 }
 
+@media screen and (max-width: 980px) {
+  .container {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .container {
+      width: 620px;
+    }
+} 
+@media screen and (max-width: 640px) {
+  .container {
+    width: 450px;
+  }
+  #masthead {
+    position: static;
+    height: 90px;
+  }
+  #main-container {
+    padding: 0px;
+  }
+  #logo {
+    width: 160px;
+  }
+}
